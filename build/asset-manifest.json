@@ -2,16 +2,21 @@
   "files": {
     "demo.css": "./static/css/demo.css",
     "demo.js": "./static/js/demo.chunk.js",
-    "demopage.css": "./static/css/demopage.css",
-    "demopage.js": "./static/js/demopage.chunk.js",
+    "demo1page.css": "./static/css/demo1page.css",
+    "demo1page.js": "./static/js/demo1page.chunk.js",
+    "demo2page.css": "./static/css/demo2page.css",
+    "demo2page.js": "./static/js/demo2page.chunk.js",
     "runtime-demo.js": "./static/js/runtime-demo.js",
-    "runtime-demopage.js": "./static/js/runtime-demopage.js",
+    "runtime-demo1page.js": "./static/js/runtime-demo1page.js",
+    "runtime-demo2page.js": "./static/js/runtime-demo2page.js",
     "demo.html": "./demo.html",
-    "demopage.html": "./demopage.html",
-    "precache-manifest.aa3f19cea1fa5e599e8bb925542b3034.js": "./precache-manifest.aa3f19cea1fa5e599e8bb925542b3034.js",
+    "demo1page.html": "./demo1page.html",
+    "demo2page.html": "./demo2page.html",
+    "precache-manifest.c9a64cba6ff41b59b07c34e820379e19.js": "./precache-manifest.c9a64cba6ff41b59b07c34e820379e19.js",
     "service-worker.js": "./service-worker.js",
     "static/js/demo.chunk.js.LICENSE.txt": "./static/js/demo.chunk.js.LICENSE.txt",
-    "static/js/demopage.chunk.js.LICENSE.txt": "./static/js/demopage.chunk.js.LICENSE.txt"
+    "static/js/demo1page.chunk.js.LICENSE.txt": "./static/js/demo1page.chunk.js.LICENSE.txt",
+    "static/js/demo2page.chunk.js.LICENSE.txt": "./static/js/demo2page.chunk.js.LICENSE.txt"
   },
   "entrypoints": {
     "demo": [
@@ -19,10 +24,15 @@
       "static/css/demo.css",
       "static/js/demo.chunk.js"
     ],
-    "demopage": [
-      "static/js/runtime-demopage.js",
-      "static/css/demopage.css",
-      "static/js/demopage.chunk.js"
+    "demo1page": [
+      "static/js/runtime-demo1page.js",
+      "static/css/demo1page.css",
+      "static/js/demo1page.chunk.js"
+    ],
+    "demo2page": [
+      "static/js/runtime-demo2page.js",
+      "static/css/demo2page.css",
+      "static/js/demo2page.chunk.js"
     ]
   }
 }

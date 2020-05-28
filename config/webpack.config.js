@@ -43,7 +43,7 @@ const imageInlineSizeLimit = parseInt(
 // Check if TypeScript is setup
 const useTypeScript = fs.existsSync(paths.appTsConfig);
 
-const ROUTES = ['demopage','demo'];
+// export const ROUTES = ['demopage','demo'];
 
 // style files regexes
 const cssRegex = /\.css$/;
@@ -146,8 +146,13 @@ module.exports = function(webpackEnv) {
         isEnvDevelopment &&
           require.resolve('react-dev-utils/webpackHotDevClient'),
       ].filter(Boolean),
-      demopage: [
-        paths.appDemoPage,
+      demo1page: [
+        paths.appDemo1Page,
+        isEnvDevelopment &&
+          require.resolve('react-dev-utils/webpackHotDevClient'),
+      ].filter(Boolean),
+      demo2page: [
+        paths.appDemo2Page,
         isEnvDevelopment &&
           require.resolve('react-dev-utils/webpackHotDevClient'),
       ].filter(Boolean),
@@ -511,7 +516,7 @@ module.exports = function(webpackEnv) {
       ],
     },
     plugins: [
-      ...ROUTES.map(page => {
+      ...paths.ROUTES.map(page => {
         return new HtmlWebpackPlugin(
           Object.assign(
             {},

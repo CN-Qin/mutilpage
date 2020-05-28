@@ -66,9 +66,9 @@ module.exports = {
   appNodeModules: resolveApp('node_modules'),
   publicUrlOrPath,
   appDemoJs: resolveModule(resolveApp, "src/demo"),
-  appDemoPage: resolveModule(resolveApp, "src/pages/demo1/index"),
+  appDemo1Page: resolveModule(resolveApp, "src/pages/demo1/index"),
+  appDemo2Page: resolveModule(resolveApp, "src/pages/demo2/index"),
 };
 
-
-
+module.exports.ROUTES= ['demo','demo1page','demo2page'];
 module.exports.moduleFileExtensions = moduleFileExtensions;

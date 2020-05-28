@@ -4,10 +4,10 @@ import './index.scss';
 import * as serviceWorker from './serviceWorker';
 
 
-
-
 ReactDOM.render(<div className="hahaha">
-   aaaa wefawefawfafffff
+  <a onClick={()=>{ window.open('/demo1page.html')}}>demo1page</a>
+  <br/>
+  <a onClick={()=>{ window.open('/demo2page.html')}}>demo2page</a>
 </div>, document.getElementById('root'));
 
 
